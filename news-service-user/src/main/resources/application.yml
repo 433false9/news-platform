@@ -7,6 +7,8 @@ server:
 
 # 配置项目信息
 spring:
+  profiles:
+    active: dev
   application:
     name: service-user
   jackson:

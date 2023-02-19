@@ -12,6 +12,7 @@
         <module>news-model</module>
         <module>news-api</module>
         <module>news-service-user</module>
+        <module>mybatis-generator-database</module>
     </modules>
 
     <packaging>pom</packaging>

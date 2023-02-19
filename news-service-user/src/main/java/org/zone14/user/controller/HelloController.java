@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.zone14.api.controller.HelloControllerApi;
-import org.zone14.response.MyResponse;
+import org.zone14.response.JsonResponse;
 
 /**
  * @author false9
@@ -15,14 +15,14 @@ public class HelloController implements HelloControllerApi {
 
     final static Logger logger = LoggerFactory.getLogger(HelloController.class);
     @Override
-    public MyResponse hello() {
+    public JsonResponse hello() {
 
         logger.debug("debug: hello~");
         logger.info("info: hello~");
         logger.warn("warn: hello~");
         logger.error("error: hello~");
 
-        return MyResponse.ok("hello") ;
+        return JsonResponse.ok("hello") ;
     }
 
 }
